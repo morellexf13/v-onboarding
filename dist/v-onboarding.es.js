@@ -869,29 +869,12 @@ const _hoisted_6 = {
   key: 0,
   class: "v-onboarding-item__header-title"
 };
-const _hoisted_7 = /* @__PURE__ */ createElementVNode("svg", {
-  xmlns: "http://www.w3.org/2000/svg",
-  class: "h-4 w-4",
-  fill: "none",
-  viewBox: "0 0 24 24",
-  stroke: "currentColor"
-}, [
-  /* @__PURE__ */ createElementVNode("path", {
-    "stroke-linecap": "round",
-    "stroke-linejoin": "round",
-    "stroke-width": "2",
-    d: "M6 18L18 6M6 6l12 12"
-  })
-], -1);
-const _hoisted_8 = [
-  _hoisted_7
-];
-const _hoisted_9 = {
+const _hoisted_7 = {
   key: 0,
   class: "v-onboarding-item__description"
 };
-const _hoisted_10 = { class: "v-onboarding-item__actions" };
-const _hoisted_11 = /* @__PURE__ */ createElementVNode("div", { "data-popper-arrow": "" }, null, -1);
+const _hoisted_8 = { class: "v-onboarding-item__actions" };
+const _hoisted_9 = /* @__PURE__ */ createElementVNode("div", { "data-popper-arrow": "" }, null, -1);
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   return withDirectives((openBlock(), createElementBlock("div", null, [
     (openBlock(), createElementBlock("svg", _hoisted_1$1, [
@@ -901,29 +884,25 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
       _ctx.step ? renderSlot(_ctx.$slots, "default", { key: 0 }, () => [
         createElementVNode("div", _hoisted_4, [
           createElementVNode("div", _hoisted_5, [
-            _ctx.step.content.title ? (openBlock(), createElementBlock("span", _hoisted_6, toDisplayString(_ctx.step.content.title), 1)) : createCommentVNode("", true),
-            createElementVNode("button", {
-              onClick: _cache[0] || (_cache[0] = (...args) => _ctx.exit && _ctx.exit(...args)),
-              class: "v-onboarding-item__header-close"
-            }, _hoisted_8)
+            _ctx.step.content.title ? (openBlock(), createElementBlock("span", _hoisted_6, toDisplayString(_ctx.step.content.title), 1)) : createCommentVNode("", true)
           ]),
-          _ctx.step.content.description ? (openBlock(), createElementBlock("p", _hoisted_9, toDisplayString(_ctx.step.content.description), 1)) : createCommentVNode("", true),
-          createElementVNode("div", _hoisted_10, [
+          _ctx.step.content.description ? (openBlock(), createElementBlock("p", _hoisted_7, toDisplayString(_ctx.step.content.description), 1)) : createCommentVNode("", true),
+          createElementVNode("div", _hoisted_8, [
             !_ctx.isFirst ? (openBlock(), createElementBlock("button", {
               key: 0,
               type: "button",
-              onClick: _cache[1] || (_cache[1] = (...args) => _ctx.onPrevious && _ctx.onPrevious(...args)),
+              onClick: _cache[0] || (_cache[0] = (...args) => _ctx.onPrevious && _ctx.onPrevious(...args)),
               class: "v-onboarding-btn-secondary"
             }, " Previous ")) : createCommentVNode("", true),
             createElementVNode("button", {
-              onClick: _cache[2] || (_cache[2] = (...args) => _ctx.onNext && _ctx.onNext(...args)),
+              onClick: _cache[1] || (_cache[1] = (...args) => _ctx.onNext && _ctx.onNext(...args)),
               type: "button",
               class: "v-onboarding-btn-primary"
             }, toDisplayString(_ctx.isLast ? "Accept" : "Next"), 1)
           ])
         ])
       ]) : createCommentVNode("", true),
-      _hoisted_11
+      _hoisted_9
     ], 512)
   ], 512)), [
     [vShow, _ctx.show]
