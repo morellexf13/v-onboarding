@@ -31,7 +31,7 @@
             v-if="step.content.description"
             class="v-onboarding-item__description"
           >
-            {{ step.content.description }}
+            {{{ step.content.description }}}
           </p>
           <div class="v-onboarding-item__actions">
             <button
