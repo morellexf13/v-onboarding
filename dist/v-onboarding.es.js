@@ -869,10 +869,7 @@ const _hoisted_6 = {
   key: 0,
   class: "v-onboarding-item__header-title"
 };
-const _hoisted_7 = {
-  key: 0,
-  class: "v-onboarding-item__description"
-};
+const _hoisted_7 = ["innerHTML"];
 const _hoisted_8 = { class: "v-onboarding-item__actions" };
 const _hoisted_9 = /* @__PURE__ */ createElementVNode("div", { "data-popper-arrow": "" }, null, -1);
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
@@ -886,7 +883,11 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
           createElementVNode("div", _hoisted_5, [
             _ctx.step.content.title ? (openBlock(), createElementBlock("span", _hoisted_6, toDisplayString(_ctx.step.content.title), 1)) : createCommentVNode("", true)
           ]),
-          _ctx.step.content.description ? (openBlock(), createElementBlock("p", _hoisted_7, toDisplayString(_ctx.step.content.description), 1)) : createCommentVNode("", true),
+          _ctx.step.content.description ? (openBlock(), createElementBlock("p", {
+            key: 0,
+            class: "v-onboarding-item__description",
+            innerHTML: _ctx.step.content.description
+          }, null, 8, _hoisted_7)) : createCommentVNode("", true),
           createElementVNode("div", _hoisted_8, [
             !_ctx.isFirst ? (openBlock(), createElementBlock("button", {
               key: 0,
